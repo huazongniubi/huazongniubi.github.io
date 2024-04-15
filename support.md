@@ -47,9 +47,9 @@ title: 技术支持
 <h3> 如何联系到我 </h3>
 
 <p> 
-email：leoparpan@icloud.com       
+email：huashuangshi@yingshuitouzi.com       
 <p> 
-qq: 1499065178     
+qq: 122469493
 <p> 
 
 {% include comments.html %}
