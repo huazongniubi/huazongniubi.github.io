@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result of IMessi Test</title>
+    <link rel="icon" href="img/favicon.jpg">
+
+    <script src="https://registry.npmmirror.com/jquery/3.7.1/files/dist/jquery.min.js"></script>
+    <script src="https://testingcf.jsdelivr.net/npm/@materializecss/materialize@2.2.1/dist/js/materialize.min.js"></script>
+    <script src="https://registry.npmmirror.com/html2canvas/1.4.1/files/dist/html2canvas.min.js"></script>
+    <script src="info/axes.js"></script>
+    <script src="js/results.js"></script>
+
+    <link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/@materializecss/materialize@2.2.1/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.cn/css2?family=Material+Symbols+Rounded">
+    <link rel="stylesheet" href="css/results.css">
+
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container">
+        <div class="section">
+            <h2 class="center-align primary-text mt-4 mb-4">Result of IMessi Test</h2>
+            <h5 class="center-align on-surface-variant-text mt-4 mb-4">你本次华学考试的成绩如下</h5>
+
+
+            <div class="row">
+                <div class="card col s12 m10 offset-m1 l8 offset-l2">
+                    <div class="card-content">
+                        <!-- Axis results will be injected here by js/results.js -->
+                    </div>
+                </div>
+            </div>
+            <div class="fixed-action-btn fab-refresh">
+                <a id="refresh" class="btn-floating btn-large tooltipped" data-position="left" data-tooltip="重新测试"> <!-- Removed href, added id -->
+                    <i class="material-symbols-rounded">refresh</i>
+                </a>
+            </div>
+
+            <div class="fixed-action-btn fab-share">
+                <a id="share" class="btn-floating btn-large tooltipped" data-position="left" data-tooltip="分享">
+                    <i class="material-symbols-rounded">share</i>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMessi Values Test</title>
+    <link rel="icon" href="img/favicon.jpg">
+
+    <script src="https://registry.npmmirror.com/jquery/3.7.1/files/dist/jquery.min.js"></script>
+    <script src="https://testingcf.jsdelivr.net/npm/@materializecss/materialize@2.2.1/dist/js/materialize.min.js"></script>
+    <script src="info/axes.js"></script>
+    <script src="info/questions.js"></script>
+    <script src="js/iHuaTest.js"></script>
+
+    <link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/@materializecss/materialize@2.2.1/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.cn/css2?family=Material+Symbols+Rounded">
+    <link rel="stylesheet" href="css/iHuaTest.css">
+
+</head>
+
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container">
+        <div class="section">
+            <div class="row">
+                <div class="card col s12 m12 l12">
+                    <div class="card-content">
+                        <h5 id="question-number" class="center-align flow-text outline-text mt-0 mb-4"></h5>
+                        <div id="question-text" class="flow-text on-surface-text"></div> <!-- Removed inline style -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-footer">
+            <div class="footer-content-wrapper surface z-depth-3">
+                <div class="row button-row">
+                    <div class="col">
+                        <button id="btn-strongly-positive" class="btn filled green darken-3 white-text full-width" data-choice-value="1.0">强烈同意</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-positive" class="btn filled green darken-1 white-text full-width" data-choice-value="0.6666666666666666">同意</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-somewhat-positive" class="btn filled green lighten-1 white-text full-width" data-choice-value="0.3333333333333333">有些同意</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-uncertain" class="btn filled grey white-text full-width" data-choice-value="0.0">中立</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-somewhat-negative" class="btn filled red lighten-1 white-text full-width" data-choice-value="-0.3333333333333333">有些反对</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-negative" class="btn filled red darken-1 white-text full-width" data-choice-value="-0.6666666666666666">反对</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-strongly-negative" class="btn filled red darken-3 white-text full-width" data-choice-value="-1.0">强烈反对</button>
+                    </div>
+                    <div class="col">
+                        <button id="btn-prev" class="btn outlined full-width on-surface-variant-text">上一个</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
+</body>
+
+</html>

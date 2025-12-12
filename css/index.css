@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.collapsible-header.flow-text {
+    text-align: justify;
+}
+
+.collapsible-header.flow-text::after {
+    align-self: center;
+}
+
+.collapsible-header .valign-wrapper {
+    flex-grow: 1;
+}
+
+.collapsible-body {
+    text-align: justify;
+}

@@ -1,34 +1,139 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHua Values</title>
+    <link rel="icon" href="img/favicon.jpg">
 
-<div class="main-post-list hidden">
+    <meta property="og:title" content="IHua Values">
+    <meta property="og:description" content="IHua Values 是一个专为简中互联网设计的梅西人迷测试器，通过 8 个维度来评估你在简中互联网中崇拜西西哥哥的程度。">
+    <meta property="og:image" content="https://huazongniubi.github.io/img/social-preview.png">
+    <meta property="og:url" content="https://huazongniubi.github.io/">
+    <meta property="og:type" content="website">
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta">        
-        <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-          <img src="/images/calendar.png" width="20px" /> 
-          {{ post.date | date: "%F"}}</time> 
-        <div class = "tag-img-icon">
-          <img src="/images/tag-icon.svg" width="20px" /> 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IHua Values">
+    <meta name="twitter:description" content="IHua Values 是一个专为简中互联网设计的梅西人迷测试器，通过 8 个维度来评估你在简中互联网中崇拜西西哥哥的程度。">
+    <meta name="twitter:image" content="https://huazongniubi.github.io/img/social-preview.png">
+
+    <script src="https://registry.npmmirror.com/jquery/3.7.1/files/dist/jquery.min.js"></script>
+    <script src="https://testingcf.jsdelivr.net/npm/@materializecss/materialize@2.2.1/dist/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/@materializecss/materialize@2.2.1/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.cn/css2?family=Material+Symbols+Rounded">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m8 offset-m2 l6 offset-l3 center-align">
+                    <img src="img/header.png" alt="Header Image" class="responsive-img">
+                </div>
+            </div>
+            <h1 class="center-align primary-text mt-4 mb-4">IHua Values</h1>
+            <h5 class="center-align on-surface-variant-text">IHua Values 是一个专为简中互联网设计的梅西人迷测试器，通过 8 个维度来评估你在简中互联网中崇拜西西哥哥的程度，面朝阿根廷方向跪拜做题可以极大增加iMei分值，快点来试试吧！！！</h5>
+
+            <div class="row center-align">
+                <div class="col s12 m12 l12">
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header flow-text">
+                                <div class="valign-wrapper">
+                                    <i class="material-symbols-rounded">privacy_tip</i><span>测试说明<span class="error-text" style="font-weight: bold;">（开始测试前必读，点击开始即视为同意）</span></span>
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <p class="flow-text on-surface-variant-text"> 
+                                    接下来你将会看到一系列由 AI 辅助生成的球迷发言或足球事件陈述，请凭借你对每个发言的第一感觉选择同意或反对的程度，共有 7 个级别。
+                                </p>
+                                <p class="flow-text on-surface-variant-text"> 
+                                    <b>注意：为了如实体现简中互联网的梅迷特质，发言可能包含适量魔怔和极端的表述，<span class="error-text">严重情况下可能会导致情绪暴躁</span>。如您感到不适，请迅速关闭本测试，并反复观看2022年世界杯梅西进球集锦。</b>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a id="start-iHuaTest-btn" href="iHuaTest.html" class="btn filled rounded btn-large waves-effect waves-light mt-4 mb-4">
+                        点击开始
+                    </a>
+            </div>
         </div>
-        <a href="/tags">
-          <div class = "post-list-icon-mate">
-            <span class="post-list__meta--tags-right">{{ post.tags }}</span>
-          </div>
-          <div class = "post-list-small-mate">
-          <a class="btn-border-small" href={{ post.url }}>阅读全文 » </a>
-          </div>
-      </div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
 
-  {% include pagination.html %}
+        <div class="row center-align">
+            <div class="col s12 m12 l12 mt-4">
+                <div class="divider"></div>
+                <h4 class="center-align on-surface-text mt-4 mb-4">Frequently Asked Questions</h4>
+                <ul class="collapsible expandable">
+                    <li class="active">
+                        <div class="collapsible-header flow-text valign-wrapper">
+                            <i class="material-symbols-rounded">help</i>后台会收集测试结果吗？
+                        </div>
+                        <div class="collapsible-body">
+                            <p class="flow-text on-surface-variant-text">
+                                本测试完全由前端实现，不会收集任何个人信息。
+                            </p>
+                        </div>
+                    </li>
+<!--                    <li>-->
+<!--                        <div class="collapsible-header flow-text valign-wrapper">-->
+<!--                            <i class="material-symbols-rounded">help</i><span>已经有 <a href="https://www.politicalcompass.org/" target="_blank">Political Compass</a>、<a href="https://8values.github.io/" target="_blank">8values</a>、<a href="https://politiscales.party/" target="_blank">PolitiScales</a>……了，为什么还要重新造轮子？</span>-->
+<!--                        </div>-->
+<!--                        <div class="collapsible-body">-->
+<!--                            <p class="flow-text on-surface-variant-text">-->
+<!--                                英文互联网上的各种政治测试，不管是出的题目还是计算测试结果的算法，都是以欧美国家的现实为基准。问题在于，欧美人关心的议题在简中圈未必就同等关心，反之亦然。更不用说简单以“左右”进行政治立场划分已经越来越捉襟见肘，不仅在欧美如此，在简中语境下更是有很多含混之处。因此，要想描述简中互联网网民的意识形态，必须跳出传统左右政治的框架，摒弃各种“主义”类大词，去找到中国现实中存在的、涉及切身利益的尖锐矛盾，通过检验测试者在这些尖锐矛盾上的态度来描述他的意识形态。-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </li>-->
+                    <li>
+                        <div class="collapsible-header flow-text valign-wrapper">
+                            <i class="material-symbols-rounded">help</i>怎样用测试结果证明我是西西哥哥的人迷还是小黑子？为什么不给我匹配一个最接近的 IHua Level？
+                        </div>
+                        <div class="collapsible-body">
+                            <p class="flow-text on-surface-variant-text">
+                                本测试意在跳出传统黑、粉、路人的框架，测试结果虽然借鉴了 8values 的坐标轴形式，但每个坐标轴都很难被简单划分到黑、粉立场上，因此更不会提供匹配到具体的 IHua Level。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header flow-text valign-wrapper">
+                            <i class="material-symbols-rounded">help</i>为什么题目没有那么极端/难绷/抽象/反人类？我平时在网上忘了说梅西是球王都是直接被处决?
+                        </div>
+                        <div class="collapsible-body">
+                            <p class="flow-text on-surface-variant-text">
+                                如果测试题目也极端/难绷/抽象/反人类的话，那么怎么区分人迷和球迷呢。如果实在想要被问候全家，还请去任何简中互联网平台发表对西西哥哥不利的评论。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header flow-text valign-wrapper">
+                            <i class="material-symbols-rounded">help</i>测试不准/不喜欢测试结果/你在恶意抹黑西西哥哥
+                        </div>
+                        <div class="collapsible-body">
+                            <p class="flow-text on-surface-variant-text">
+                                测试结果仅供娱乐，不具有任何研究价值。如果只是想要一个自己满意的测试结果，也可以直接跳过测试环节，手动修改网址里的参数，或者反复观看2022年世界杯梅西进球集锦。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
-</div>
+    <footer class="page-footer primary mt-0 pt-0">
+        <div class="container">
+        </div>
+        <div class="footer-copyright">
+            <div class="container on-primary-text">
+                Made by Claude, DeepSeek, Gemini, GPT & God Hua. Special Thanks to iMei.TY
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
