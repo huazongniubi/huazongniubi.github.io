@@ -23,7 +23,7 @@ def convert_question(input: str, output: str = 'questions.js'):
         '理论华学': 'theory',
         '计算华学': 'calcul',
         '历史华学': 'history',
-        '广义华学': 'generalized'
+        '相对华学': 'relativity'
     }
 
     # Keep track of counts for each axis to generate unique IDs
