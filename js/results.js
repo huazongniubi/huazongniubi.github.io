@@ -352,7 +352,7 @@ $(document).ready(async () => {
             });
 
             const link = document.createElement('a');
-            link.download = 'IMessiValuesResult.png';
+            link.download = 'IHuaValuesResult.png';
             link.href = canvas.toDataURL('image/png');
             document.body.appendChild(link);
             link.click();
@@ -366,8 +366,8 @@ $(document).ready(async () => {
 
     // --- Retake MeiTest Button Handler ---
     $('#refresh').click(() => {
-        localStorage.removeItem('iMeiTestState_v2');
-        console.log("Cleared iMeiTest state for retake.");
-        window.location.href = 'iMeiTest.html';
+        localStorage.removeItem('iHuaTestState_v2');
+        console.log("Cleared iHuaTest state for retake.");
+        window.location.href = 'iHuaTest.html';
     });
 });

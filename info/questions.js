@@ -190,7 +190,7 @@ questions = [
     },
     {
         "id": "theory_4",
-        "question": "成语物华天宝的真正含义是造物主华总是天、是国宝",
+        "question": "纽约市曼哈顿区南部从百老汇路延伸到东河的一条大街道姓华",
         "effect": {
             "theory": 10
         }
