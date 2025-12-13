@@ -71,7 +71,10 @@ questions = [
     },
     {
         "id": "GodHua_5",
-        "question": "神灯：三个愿望\n华总：你说",
+        "question": ```
+        神灯：三个愿望
+        华总：你说
+        ```,
         "effect": {
             "GodHua": 10
         }
